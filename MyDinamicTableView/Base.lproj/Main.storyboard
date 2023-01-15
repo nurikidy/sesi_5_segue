@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nZ2-aT-oxd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Y7-TN-6ho">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Swc-1H-oYA">
-                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -46,7 +46,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nu-yP-EQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327.69230769230768" y="-257.34597156398104"/>
+            <point key="canvasLocation" x="1256.9230769230769" y="-257.34597156398104"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uXw-6v-Ebx">
+            <objects>
+                <viewController id="Wci-hT-4Hp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RK0-vi-NCx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iOSPemula" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-w6-VZM">
+                                <rect key="frame" x="75" y="136" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PBQ-pN-vQU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Rbj-za-gKW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MA5-kO-avb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="427"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="3rF-ZI-Ck7">
@@ -99,12 +121,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaf-BN-CPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563.0769230769231" y="-257.34597156398104"/>
+            <point key="canvasLocation" x="2492.3076923076924" y="-257.34597156398104"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Book List-->
         <scene sceneID="Cxe-Zk-Xd1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nZ2-aT-oxd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Book List" image="books.vertical" catalog="system" id="VkS-gW-9aH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b9K-E2-fw1">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -117,11 +140,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gze-TQ-Xs5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="327.69230769230768" y="-257.34597156398104"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="StB-xI-gow">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Y7-TN-6ho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wc4-4J-ldF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nZ2-aT-oxd" kind="relationship" relationship="viewControllers" id="3ie-dU-dAN"/>
+                        <segue destination="Wci-hT-4Hp" kind="relationship" relationship="viewControllers" id="upo-2b-yAS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kO8-as-ayQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-601.53846153846155" y="-257.34597156398104"/>
         </scene>
     </scenes>
     <resources>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="iOSPemula" width="333.33334350585938" height="333.33334350585938"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
