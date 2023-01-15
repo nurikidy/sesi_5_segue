@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF70CE1929742A3A0079E9A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70CE1829742A3A0079E9A2 /* DetailViewController.swift */; };
 		CFF27329293A32210096CE33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF27328293A32210096CE33 /* AppDelegate.swift */; };
 		CFF2732B293A32210096CE33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2732A293A32210096CE33 /* SceneDelegate.swift */; };
 		CFF2732D293A32210096CE33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2732C293A32210096CE33 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF70CE1829742A3A0079E9A2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CFF27325293A32210096CE33 /* MyDinamicTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDinamicTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF27328293A32210096CE33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF2732A293A32210096CE33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				CFF2733C293A346D0096CE33 /* AcademyModel.swift */,
 				CFF2DFC2293A57CB006AB553 /* AcademyTableViewCell.swift */,
 				CFF2DFC3293A57CB006AB553 /* AcademyTableViewCell.xib */,
+				CF70CE1829742A3A0079E9A2 /* DetailViewController.swift */,
 			);
 			path = MyDinamicTableView;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				CFF2732D293A32210096CE33 /* ViewController.swift in Sources */,
 				CFF27329293A32210096CE33 /* AppDelegate.swift in Sources */,
 				CFF2733D293A346D0096CE33 /* AcademyModel.swift in Sources */,
+				CF70CE1929742A3A0079E9A2 /* DetailViewController.swift in Sources */,
 				CFF2732B293A32210096CE33 /* SceneDelegate.swift in Sources */,
 				CFF2DFC4293A57CB006AB553 /* AcademyTableViewCell.swift in Sources */,
 			);
@@ -228,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
