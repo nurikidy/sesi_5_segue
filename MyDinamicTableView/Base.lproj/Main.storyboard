@@ -31,7 +31,14 @@
                             <constraint firstItem="Swc-1H-oYA" firstAttribute="leading" secondItem="u9u-nH-dgg" secondAttribute="leading" id="owj-nk-pmE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WCu-rP-3Va"/>
+                    <navigationItem key="navigationItem" title="Kelas Irsyad" id="WCu-rP-3Va">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="E1Q-2u-9rx"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="globe" catalog="system" id="w9q-lH-P0g">
+                            <connections>
+                                <action selector="goToWebsite:" destination="IJM-wS-fCC" id="Ta9-rE-BWC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="AcademyTableView" destination="Swc-1H-oYA" id="IwN-7N-quQ"/>
                         <segue destination="lcw-0c-3Hk" kind="show" identifier="moveToDetail" id="9rW-pl-lp8"/>
@@ -114,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="globe" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

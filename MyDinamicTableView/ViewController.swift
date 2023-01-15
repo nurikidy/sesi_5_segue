@@ -11,6 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet var AcademyTableView: UITableView!
     
+    @IBAction func goToWebsite(_ sender: Any) {
+        let urlDicoding = "https://mixcloud.com/nurikidy"
+        if let url = URL(string: urlDicoding), UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+            
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
